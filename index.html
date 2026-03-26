@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> new 뭐라고????? </title>
+	<style>
+
+	@font-face {
+    font-family: 'JejuStoneWall';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+	html{font-family: 'JejuStoneWall'; 
+		word-break: keep-all;}
+
+	html, body {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+		}
+
+/*CSS초기화 주석은 cmd + slash*/
+	body, h1, h2, p {margin: 0; padding: 0}
+
+	section{background: skyblue;
+		padding: 130px 0px;
+		width: 1920px;
+			}
+
+	div {width: 900px; 
+		margin: 0 auto;
+		background: whitesmoke;
+		border-radius: 10px;
+		}
+
+	h1{text-align: center;
+		line-height: 1.2;			
+		}
+
+	p{font-size: 20px;
+		color: floralwhite;
+		text-align: center;
+		padding: 40px;
+		font-family: sans-serif;
+		}
+
+		.wrap {
+		width: 1920px;
+		position: relative;
+		left: 50%;
+		margin-left: -960px;
+		}
+
+		.black {
+		background: darkred;
+		color: darkred;}
+
+		.notme {
+		background: black;
+		color: darkred;
+		font-size: 3rem;
+		padding-top: 400px;
+		padding-bottom: 400px;
+		overflow: visible;}
+
+		.titleme {
+		background: mediumpurple;
+		color: darkred;
+		font-size: 2.5rem;
+		padding-top: 250px;
+		padding-bottom: 150px;
+				}
+
+		.sectitle {
+		color: white;
+		font-size: 1.5rem;
+				}
+
+		.sectitle h1 {
+		margin-bottom: 80px;
+		}
+
+		.gradient {background:linear-gradient(to bottom, black, darkred)}
+
+		.gradientnew {background:linear-gradient(to bottom, black, darkred)}
+
+		.pic {background: url(food.jpg); background-size: 49%;}
+
+		.piccover {background: url(cake.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			}
+
+		.pic3 {background: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmw2bWE3bDNwdnYyMDI2cGE3amM1M2k1YW5xa3k3OHYzMGVyM2hkZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Sgp8NT3adL5eM/giphy.gif); background-size: 23%;}
+
+		.none{background: none;}
+
+		.font-white{color: white;}
+
+/*GD PART*/
+		.side {
+		width: 1600px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 0;
+		}
+
+		.sectitle h1 {
+		margin-bottom: 80px;
+		}
+
+		.side img {
+		width: 700px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 40px;
+		border-radius: 10px;
+		}
+
+		.side p {
+		width: 700px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		padding: 0;
+		line-height: 1.5;
+		margin-left: 40px;
+		font-size: 20px;
+		}
+
+/*SURPRISE PART*/
+		.surprise {
+		transition: transform 0.2s ease out;
+		transform-origin: center;
+		}
+
+		.surprise:hover {
+		transform: scale(1.8) rotate(-2deg);
+		}
+
+/*ZOOM PART*/
+		.roommate-section {
+		background: black;
+		}
+
+		.roommate-wrap {
+		width: 900px;
+		margin: 0 auto;
+		text-align: center;
+		background: 0;
+		overflow: hidden;
+		}
+
+		.zoom-img {
+		width: 550px;
+		transform: scale(1.3);
+		transition: transform 0.6s ease-out;
+		filter: blur(6px);
+		}
+
+		.roommate-section:hover .zoom-img {
+		transform: scale(0.8);
+		filter: blur(0);
+		opacity: 1;
+		}
+
+/*SPLIT SECTION*/
+		.split-story {
+		position: relative;
+		height: 1080px;
+		}
+
+		.storybox {
+		position: absolute;
+		width: 520px;
+		background: rgba(255,255,255,0.88);
+		border-radius: 20px;
+		padding: 30px 35px;
+		box-sizing: border-box;
+		}
+
+		.storybox h1 {
+		margin: 0;
+		font-size: 28px;
+		line-height: 1.35;
+		text-align: left;
+		color: darkred;
+		max-width: none;
+		}
+
+		.box-left {
+		top: 90px;
+		left: 120px;
+		transform: rotate(-2deg);
+		}
+
+		.box-right {
+		bottom: 90px;
+		right: 120px;
+		transform: rotate(2deg);
+		}
+
+/*KEN SECTION*/
+		.reaction {
+		text-align: center;
+		}
+
+		.reaction span {
+			display: inline-block;
+			font-size: 100px;
+			color: white;
+			vertical-align: middle;
+			transform: rotate(-5deg);
+		}
+
+		.reaction img {
+			width: 400px;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 20px;
+		}
+
+		p1{font-size: 50px;
+		color: floralwhite;
+		text-align: center;
+		font-family: jejustonewall;
+		line-height: 60px;
+		}
+
+/*ISIS SECTION*/
+		.isis-section {
+		background: url(war.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 150px 0;
+		text-align: center;
+		}
+
+		.isis-box {
+		display: inline-block;
+		background: whitesmoke;
+		color: darkred;
+		padding: 10px 20px;
+		border-radius: 15px;
+		transform: rotate(-3deg);
+		box-shadow: 10px 10px 0 black;
+		}
+
+		.isis-box:hover {
+		transform: rotate(0deg) scale(1.05);
+		transition: 0.3s;
+		}
+
+		.isis-box h2 {
+		font-size: 3.5rem;
+		}
+
+		.isis-box p {
+		font-size: 20px;
+		color: black;
+		}
+
+	</style>
+</head>
+
+<body>
+<div class="wrap">
+	<section class="gradient titleme">
+		<div class="none font-white">
+			<h1> Ramadan, Subway, and The Day That I Will Never Forget </h1>
+		</div>
+	</section>
+
+	<section class="black sectitle">
+		
+			<h1> Wait.. 라마단이란? </h1>
+			<div class="none side">
+				<img src="1RAMADAN.jpg">
+				<p><br>Ramadan is a holy month for Muslims that happens once a year. During this month, we fast from sunrise to sunset, which means no food or drink during the day.
+	<br>
+	<br>
+				At sunset, Muslims gather at mosques or with family and friends to break our fast together. It’s also a time to pray, reflect, and do good deeds. In Korea, many foreign and also Korean Muslims come together every evening to break their fast and pray at the Itaewon mosque.
+	<br>
+	<br>
+				My roommate and I were on our way to the mosque, riding the subway, talking about our day, feeling calm and peaceful. We were going up the loooooooooooong escalator..
+	<br>
+	<br>
+				<-- 바주 멜라유를 입은 지디
+				</p>
+			</div>
+		
+	</section>
+
+	<section class="pic3">
+		<div>
+			<h1> And then!!! A group of boys noticed us… and <br><br>ohhh.<br>myyy.<br>goddd. <br><br> you won’t believe what they shouted at us… <br> <br>
+			<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXJ3YjhhbW1mbWs1NnlxYTZidjljNTBrMjM4Z3E4dWowdDdvc3FvcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3tHYF6fBk9DS3EJ1l5/giphy.gif">
+			</h1>
+		</div>
+	</section>
+
+	<section class="notme">
+		<div class="none surprise">
+			<h1> YoOOoO TERRORIST! </h1>
+		</div>
+	</section>
+
+	<section class="isis-section">
+		<div class="isis-box">
+			<h2> ISIS란? </h2>
+			<p>
+			ISIS는 2010년대에 널리 알려진 폭력적인 극단주의 단체이다. <br>
+			하지만 이는 이슬람이나 일반 무슬림을 대표하지 않는다. <br>
+			대부분의 무슬림은 이러한 단체를 강하게 반대한다. <br>
+			한국에 있는 무슬림 외국인과 한국인 무슬림은 학생, 직장인, 가족 등 평범한 사람들이다.<br>
+			이들은 ISIS와 아무런 관련이 없다.<br>
+			하지만 이러한 오해로 인해 때때로 상처가 되는 상황이 발생하기도 한다.
+			</p>
+		</div>
+	</section>
+
+	<section class="pic">
+		<div class="none">
+			<h1> At first, I couldn’t believe what I heard. I was mindblown, the flabber that I gasted, the gasp that I gusp!!!! I was so shocked that I couldn’t move, I was trying to process everything. </h1>
+		</div>
+	</section>
+
+	<section class="black roommate-section">
+		<div class="none roommate-wrap">
+			<h1>
+			<img src="4MELOOK.jpeg" class="zoom-img"> <br>
+			I looked at my roommate behind me.. <br>
+			<img src="5ACILOOK.jpeg" class="zoom-img"> <br>
+			She looked back at me..
+			</h1>
+		</div>
+	</section>
+
+	<section class="piccover split-story">
+		<div class="font-white storybox box-left">
+			<br><h1>My heart was racing because it was my first time experiencing something like this in my almost 4 years living in Korea.
+	<br><br>
+			Because the escalator was so long, it felt like a million years to go towards the exit. 
+			</h1>
+		</div>
+		
+		<div class="storybox box-right">
+			<h1>
+			I saw some ajusshis and ajummas staring at us like we were fish bait.
+	<br><br>
+			Their stares were so sharp, it almost killed me. We didn’t know what to do, so we just stood there in silence. When we almost reached the top, I looked at my roommate and saw her about to cry. So I whispered to her…
+			</h1><br>
+		</div>
+	</section>
+
+	<section class="black sectitle gradientnew">
+		<div class="none reaction">
+			<span class= "left"> 넌 </span>
+			<img src="9KENCHANA.jpeg">
+			<span class="right"> ? </span>
+
+		<p>	When we reached
+			the top, some people came to console us and said.. 
+		</p>
+				<p1>
+					겐찬으세여?? ㅠㅠ<br>
+					걍 무시해요,<br>
+					저 사람들은 나쁜 사람들이에여
+				</p1>
+		<p>	Some kind people even apologized 	to us on behalf of those boys…
+
+			So we went to the mosque and there were some people who asked what happened.. 
+
+			But anyway, that day was shocking and unforgettable. But it also reminded us that kindness exists even when people are cruel and life goes on~
+
+			<br>
+			<br>
+			<br>
+			<br>
+			
+		</p>
+
+	<footer>
+		Eqaa Hasnan <br>
+		Web Interaction Design <br>
+		2026
+	</footer>
+
+		</div>
+	</section>
+</div>
+</body>
+</html>
